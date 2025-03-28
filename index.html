@@ -9,35 +9,113 @@
         }
         #logo{
             display: block;
-            width: 25%;
-            height: 25%;
+            height: 50vh;
+            margin-top: 100px;
+            margin-bottom: 100px;
             margin: auto;
         }
-        #pages_container{
-
-        }
-        .page{
+        #title{
+            font-size: 10vw;
             color: white;
-            display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
+            text-align: center;
+            text-decoration: underline;
+        }
+        #content{
+            color: white;
+        }
+        .title-parts{
+            border-style: none none solid none;
+            border-width: 10px;
+            font-size: 5vw;
+        }
+        .subtitle-parts{
+            text-decoration: underline;
+            font-size: 4vw;
+            margin-bottom: 10px;
+        }
+        .parts-elements{
+            display: grid; 
+            grid-template-columns: auto auto auto;           
+            font-size: 2vw;
+        }
+        .article{
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .quantity{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .price{
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        .description{
+            text-align: left;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            margin-top: 0px;
         }
     </style>
 <body>
     <header>
         <img src="Logo-TaverneDeLaCollegiale b.png" id=logo>
-        <div id="pages_container">
-            <h3 class="page">Bières</h3>
-            <h3 class="page">Alcools</h3>
-            <h3 class="page">Cocktails</h3>
-            <h3 class="page">Vins et Cava</h3>
-            <h3 class="page">Boisson Chaudes</h3>
-            <h3 class="page">Softs</h3>
-        </div>
+        <h1 id="title">Carte</h1>
     </header>
-    <div>
-        
+    <div id="content">
+        <div>
+            <h2 class="title-parts"class="title-parts">Bières</h2>
+            <h3 class="subtitle-parts">Au fût</h3>
+            <div class="parts-elements">
+                <p class="article">Jupiler</p><p class="quantity">25cl|33cl|50cl</p><p class="price">2.20€|2.60€|4.30€</p>
+                <p class="description">(5.2%) Pils blonde</p>
+                <p class="article">Diôle</p><p class="quantity">33cl</p><p class="price">3.60€</p>
+                <p class="description">Diôle de la saison | Demandez plus d'infos au barman</p>
+                <p class="article">Triple d'Anvers</p><p class="quantity">33cl</p><p class="price">6.00€</p>
+                <p class="description">(8%) Triple blonde à haute fermentation </p>
+                <p class="article">Scotch CTS</p><p class="quantity">25cl</p><p class="price">3.90€</p>
+                <p class="description">(5.5%) Bière brune à haute fermentation</p>
+                <p class="article">Belle Vue Kriek</p><p class="quantity">25cl</p><p class="price">4.00€</p>
+                <p class="description">(4.1%) Bière aromatisée à la cerise</p>
+                <p class="article">Bière du mois</p><p class="quantity"></p><p class="price">5.00€</p>
+                <p class="description">Demandez plus d'infos au barman</p>
+            </div>
+            <h3 class="subtitle-parts">En bouteilles</h3>
+            <div class="parts-elements">
+                <p class="article">Jupiler</p><p class="quantity">25cl|33cl|50cl</p><p class="price">2.20€|2.60€|4.30€</p>
+                <p class="description">(5.2%) Pils blonde</p>
+                <p class="article">Diôle</p><p class="quantity">33cl</p><p class="price">3.60€</p>
+                <p class="description">Diôle de la saison | Demandez plus d'infos au barman</p>
+                <p class="article">Triple d'Anvers</p><p class="quantity">33cl</p><p class="price">6.00€</p>
+                <p class="description">(8%) Triple blonde à haute fermentation </p>
+                <p class="article">Scotch CTS</p><p class="quantity">25cl</p><p class="price">3.90€</p>
+                <p class="description">(5.5%) Bière brune à haute fermentation</p>
+                <p class="article">Belle Vue Kriek</p><p class="quantity">25cl</p><p class="price">4.00€</p>
+                <p class="description">(4.1%) Bière aromatisée à la cerise</p>
+                <p class="article">Bière du mois</p><p class="quantity"></p><p class="price">5.00€</p>
+                <p class="description">Demandez plus d'infos au barman</p>
+            </div>
+            <h2 class="title-parts">Alcools</h2>
+            <div class="parts-elements">
 
+            </div>
+            <h2 class="title-parts">Softs</h2>
+            <div class="parts-elements">
+
+            </div>
+            <h2 class="title-parts">Cocktails</h2>
+            <div class="parts-elements">
+
+            </div>
+            <h2 class="title-parts">Vins et Cava</h2>
+            <div class="parts-elements">
+
+            </div>
+            <h2 class="title-parts">Boisson Chaudes</h2>
+            <div class="parts-elements">
+
+            </div>
+        </div>
     </div>
     <footer>
 
