@@ -1,0 +1,86 @@
+@import url('fonts/zodiak/zodiak.css');
+
+body{
+    background-color: rgb(33, 33, 34);
+    color: white;
+    font-family: Zodiak-Regular;
+    font-size: 27pt;
+}
+#logo{
+    display: block;
+    height: 50vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#title{
+    display: none;
+    font-size: 10vw;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Zodiak-Black;
+    color: #D89B52;
+}
+#content{
+    margin: 0px 25px;
+}
+.title-parts{
+    border-style: none none solid none;
+    border-width: 10px;
+    font-size: 5vw;
+    margin-top: 100px;
+    font-family: Zodiak-Black;
+    color: #D89B52;
+}
+.subtitle-parts{
+    text-decoration: underline;
+    font-size: 25pt;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-family: Zodiak-BlackItalic;
+    color: #D89B52;
+}
+.subsubtitle-parts{
+    text-decoration: underline;
+    font-size: 20pt;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: Zodiak-BoldItalic;
+    color: #D89B52;
+}
+.article-header{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+.article-data{
+    display: flex;
+    flex-direction: row;
+}
+.article{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.quantity{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    font-style: italic;
+}
+.price{
+    text-align: right;
+    margin-bottom: 10px;
+}
+.description{
+    display: flex;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-size: 26pt;
+}
+.line{
+    border-bottom: 2px solid #D89B52;
+    width: 25%;
+}
