@@ -3,6 +3,9 @@
 
 
 /* --------------Page--------------- */
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgb(33, 33, 34);
     color: white;
@@ -36,14 +39,45 @@ body{
     font-family: Zodiak-Black;
     color: #D89B52;
 }
-#content{
+.content {
     margin: 0px 25px;
+}
+@media all and (min-width: 720px) {
+    .content {
+        margin: 0px 25px;
+    }
+}
+@media all and (min-width: 1300px) {
+    .content {
+        margin: 0px 200px;
+    }
+}
+@media all and (min-width: 1700px) {
+    .content {
+        margin: 0px 400px;
+    }
+}
+@media all and (min-width: 2100px) {
+    .content {
+        margin: 0px 600px;
+    }
+}
+@media all and (min-width: 2500px) {
+    .content {
+        margin: 0px 800px;
+    }
+}
+@media all and (min-width: 2900px) {
+    .content {
+        margin: 0px 1000px;
+    }
 }
 .title-parts{
     border-style: none none solid none;
     border-width: 10px;
     font-size: 5vw;
     margin-top: 100px;
+    padding-top: 160px;
     font-family: Zodiak-Black;
     color: #D89B52;
 }
@@ -113,9 +147,10 @@ body{
     width: 125px;
     height: 25px;
     background-color: #D89B52;
-    margin: 10px 0px;
+    margin: 0px 0px;
     transition: 0.4s;
     border-radius: 15px;
+    border: 5px solid rgb(33, 33, 34);
 }
 
 .change .bar1 {
@@ -135,27 +170,53 @@ body{
     display: inline-block;
 }
 .dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     left: -100vw;
     background-color: rgb(33, 33, 34);
     border-style: solid;
-    border-width: 1vw;
+    border-width: 10px;
     border-color: #D89B52;
     z-index: 1;
     width: 75vw;
+    max-width: 800px;
     transition: 0.2s;
+    height: 100vw;
 }
-.dropdown-content a {
+.dropdown-content div {
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 1;
+    min-height: 0;
+    width: 100%;
+    border-top: 3px solid #D89B52;
+    display: flex;
+    align-items: center;
+}
+#bigline {
+    border-top: 10px solid #D89B52;
+}
+.dropdown-content div a {
     font-weight: bold;
     font-size: 100%;
     color: white;
-    padding: 5% 5%;
     text-decoration: none;
-    display: block;
+    padding: 30px;
+    width: 100%;
 }
-.dropdown a:hover {
-    background-color: #ddd;
+@media all and (min-aspect-ratio: 3/4) {
+    .dropdown-content {
+        width: 50vh;
+        height: 70vh;
+    }
+}
+.lien-menu:hover {
+    background-color: rgb(93, 93, 95);
+    transition: 0.2s;
+}
+.lien-menu{
+    transition: 0.2s;
 }
 .show {
     animation-name: deploy;
@@ -173,11 +234,6 @@ body{
 .menubigline{
     border-bottom: 1vw solid #D89B52;
     width: 100%;
-}
-/* ----------------------------- */
-.dropdown-content a:hover {
-    background-color: rgb(93, 93, 95);
-    transition: 0.2s;
 }
 /* ----------------------Menu------------------------- */
 
@@ -225,8 +281,37 @@ label, .subsubtitle-parts{
     width: 100%;
     margin: 10vh 0 0 0;
 }
-.contact_container h1 {
+.contact{
+    text-align: center;
+}
+.contact h1 {
     color: #D89B52;
     width: 100%;
+}
+#reseaux{
+    display: flex;
+    max-width: 100vw;
+}
+#reseaux img{
+    max-width: 400px;
+    margin: 5vh auto 1vh auto;
+    align-items: center;
+}
+#reseaux img:hover{
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+#resaux-container{
+    font-size: 2vw;
+}
+#mail{
+    color: #D89B52;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: #D89B52;
+    cursor: text;
+}
+#mail:hover{
+    color: #ffecd5;
 }
 /* ----------------------contact------------------------ */
