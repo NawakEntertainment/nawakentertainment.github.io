@@ -1,10 +1,14 @@
 @import url('fonts/zodiak/zodiak.css');
+/* --------------Font--------------- */
 
+
+/* --------------Page--------------- */
 body{
     background-color: rgb(33, 33, 34);
     color: white;
     font-family: Zodiak-Regular;
     font-size: 27pt;
+    margin: 0px;
 }
 #logo{
     display: block;
@@ -84,20 +88,12 @@ body{
     border-bottom: 2px solid #D89B52;
     width: 25%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+/* --------------Page--------------- */
 /* --------------Bouton menu--------------- */
 .container {
+    position: fixed;
+    left: -6px;
+    top: 0px;
     display: inline-block;
     cursor: pointer;
     margin: 30px;
@@ -123,4 +119,50 @@ body{
 .change .bar3 {
     transform: translate(0, -35px) rotate(45deg);
 }
-/* ----------------------------------------------------- */
+/* --------------Bouton menu--------------- */
+/* -----------------------Menu------------------------ */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(33, 33, 34);
+    border-style: solid;
+    border-width: 1vw;
+    border-color: #D89B52;
+    z-index: 1;
+    transition: 1s;
+    width: 75vw;
+}
+.dropdown-content a {
+    font-weight: bold;
+    font-size: 100%;
+    color: white;
+    padding: 5% 5%;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover {
+    background-color: #ddd;
+}
+.show {
+    animation-name: deploy;
+    animation-duration: 3s;
+    display: block;
+    height: 70vh;
+}
+@keyframes deploy {
+    from {height: 0vh;}
+    to {height: 70vh;}
+}
+.menuline{
+    border-bottom: 0.5vw solid #D89B52;
+    width: 100%;
+}
+.menubigline{
+    border-bottom: 1vw solid #D89B52;
+    width: 100%;
+}
+/* ----------------------Menu------------------------- */
