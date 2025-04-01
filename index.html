@@ -11,21 +11,21 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
             <div id="myDropdown" class="dropdown-content">
-                <a href="#">Bières</a>
+                <a href="#bieres">Bières</a>
                 <div class="menuline"></div>
-                <a href="#">Alcools</a>
+                <a href="#alcools">Alcools</a>
                 <div class="menuline"></div>
-                <a href="#">Softs</a>
+                <a href="#softs">Softs</a>
                 <div class="menuline"></div>
-                <a href="#">Cocktails</a>
+                <a href="#cocktails">Cocktails</a>
                 <div class="menuline"></div>
-                <a href="#">Vins et Cava</a>
+                <a href="#vinsetcava">Vins et Cava</a>
                 <div class="menuline"></div>
-                <a href="#">Boissons Chaudes</a>
+                <a href="#boissonschaudes">Boissons Chaudes</a>
                 <div class="menuline"></div>
-                <a href="#">En-cas</a>
+                <a href="#encas">En-cas</a>
                 <div class="menubigline"></div>
-                <a href="#">Contact et Privatisation</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
         <script>
@@ -38,7 +38,7 @@
         <h1 id="title">Carte</h1>
     </header>
     <div id="content">
-        <h2 class="title-parts"class="title-parts">Bières</h2>
+        <h2 class="title-parts" id="bieres">Bières</h2>
         <!-- Partie Bières -->
         <div>
             <h3 class="subtitle-parts">Au fût</h3>
@@ -218,7 +218,7 @@
                 
                 </div>
         </div>
-        <h2 class="title-parts">Alcools</h2>
+        <h2 class="title-parts" id="alcools">Alcools</h2>
         <!-- Partie Alcools -->
         <div>
             <h3 class="subtitle-parts">Apéritifs</h3>
@@ -374,7 +374,7 @@
 
             </div>
         </div>
-        <h2 class="title-parts">Softs</h2>
+        <h2 class="title-parts" id="softs">Softs</h2>
         <!-- Partie Softs-->
         <div class="parts-elements">
 
@@ -444,7 +444,7 @@
             <p class="description"></p>
 
         </div>
-        <h2 class="title-parts">Cocktails</h2>
+        <h2 class="title-parts" id="cocktails">Cocktails</h2>
         <!-- Partie Cocktails-->
         <div>
             <h3 class="subtitle-parts">Avec Alcools</h3>
@@ -510,7 +510,7 @@
 
             </div>
         </div>
-        <h2 class="title-parts">Vins et Cava</h2>
+        <h2 class="title-parts" id="vinsetcava">Vins et Cava</h2>
         <!-- Partie Vin et Cava-->
         <div>
 
@@ -531,7 +531,7 @@
 
         </div>
 
-        <h2 class="title-parts">Boissons Chaudes</h2>
+        <h2 class="title-parts" id="boissonschaudes">Boissons Chaudes</h2>
         <!-- Partie Boisson Chaudes-->
         <div>
 
@@ -591,7 +591,7 @@
 
         </div>
 
-        <h2 class="title-parts">En-cas</h2>
+        <h2 class="title-parts" id="encas">En-cas</h2>
         <!-- Partie En-cas-->
         <div>
 
@@ -619,10 +619,31 @@
             <p class="description"></p>
 
         </div>
-
     </div>
     <footer>
-
+        <div class="contact_container">
+            <h1 class="title-parts" id="contact">Formulaire de contact</h1>
+            <form action="/send_mail.php">
+              <label for="fname" class="subsubtitle-parts">Nom prénom</label>
+              <input type="text" id="fname" name="firstname">
+          
+              <label for="sujet" class="subsubtitle-parts">Sujet</label>
+              <input type="text" id="sujet" name="sujet">
+          
+              <label for="emailAddress" class="subsubtitle-parts">Email</label>
+              <input id="emailAddress" type="email" name="email">
+          
+          
+              <label for="subject" class="subsubtitle-parts">Message</label>
+              <textarea id="subject" name="subject" style="height:500px"></textarea>
+          
+              <input type="submit" value="Envoyer">
+            </form>
+            <div id="inline_logo">
+              <img src="Vitrine-PorteFT.png">
+              <img src="Vitrine-PorteFT.png">
+            </div>
+          </div>
     </footer>
 </body>
 </html>
