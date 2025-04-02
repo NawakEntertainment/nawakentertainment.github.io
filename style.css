@@ -271,17 +271,17 @@ body{
 #face{
     grid-column-start: 3;
 }
-#reseaux img{
+#reseaux img {
     max-width: 100%;
     min-width: 100%;
     margin: 5vh auto 1vh auto;
     align-items: center;
 }
-#reseaux img:hover{
+#reseaux img:hover {
     filter: brightness(135%);
     -webkit-filter: brightness(135%);
 }
-#reseaux-container{
+#reseaux-container {
     font-size: 2vw;
 }
 @media all and (min-aspect-ratio: 3/4) {
