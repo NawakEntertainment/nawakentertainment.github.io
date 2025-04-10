@@ -1,4 +1,5 @@
 @import url('fonts/zodiak/zodiak.css');
+@import url('fonts/nunito/nunito.css');
 /* --------------Font--------------- */
 
 
@@ -28,10 +29,6 @@ body{
         height: 80vh;
         width: auto;
     }
-}
-#inline_logo{
-    display: flex;
-    margin-bottom: 10vw;
 }
 #inline_logo img{
     max-width: 20vh;
@@ -304,5 +301,29 @@ body{
 }
 #mail:hover{
     color: #ffecd5;
+}
+#logoentreprise{
+    size: 100% 100%;
+    grid-column-start: 2;
+}
+#Textlogoentreprise{
+    size: 100% 100%;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    text-align: center;
+    font-size: 25pt;
+    font-family: Nunito-BlackItalic;
+}
+#inline_logo{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100vw;
+    margin-bottom: 10vw;
+}
+@media all and (min-aspect-ratio: 3/4) {
+    #inline_logo {
+        grid-template-columns: 2fr 1fr 2fr;
+    }
 }
 /* ----------------------contact------------------------ */
